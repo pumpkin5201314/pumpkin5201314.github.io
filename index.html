@@ -1,0 +1,50 @@
+ <html>
+ 
+    <head>
+        <mate charset="utf-8">
+        <title></title>
+    </head>
+  <style>
+  /* img{
+
+    float:left;
+    position:absolute;
+    left:0;
+    top:0
+  } */
+  #bu{
+      width: 500px;
+      height:500px;
+      /* float:left; */
+    position:absolute;
+    left:0;
+    top:0
+  }
+  #buu{
+      width: 500px;
+      height:500px;
+      /* float:right; */
+    position:absolute;
+    right:0;
+    top:0
+  }
+
+  </style>
+    <body>
+   
+ 
+    <div id="bu" ></div>
+    <div id="buu" ></div>
+    <img id="img" src="./1.jpg">
+    </body>
+    <script>
+        var prev = document.getElementById("bu");
+        prev.onclick = function () {
+            document.getElementById("img").src="./2.jpg";
+            }
+        var prev = document.getElementById("buu");
+        prev.onclick = function () {
+            document.getElementById("img").src="./1.jpg";
+            }
+    </script>
+</html>
